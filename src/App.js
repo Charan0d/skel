@@ -1,13 +1,26 @@
-import ExhibiorLoader from './ExhibitorLoader';
-import './App.css';
+import ExhibiorLoader from "./ExhibitorLoader";
+import "./App.css";
+import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
-  return (
-    <div className="App">
-      <ExhibiorLoader/>
-      
-    </div>
-  );
+	return (
+		<Container className="App">
+			<Row>
+				<Col sm={6}>
+					<ExhibiorLoader />
+				</Col>
+				<Col sm={6}>
+					<ExhibiorLoader />
+				</Col>
+				<Col sm={6}>
+					<ExhibiorLoader />
+				</Col>
+				<Col sm={6}>
+					<ExhibiorLoader />
+				</Col>
+			</Row>
+		</Container>
+	);
 }
 
 export default App;
