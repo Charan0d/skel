@@ -56,8 +56,8 @@
 }
 
 .people-note-loader {
-    width: 80%;
-    height: 157px;
+    max-width: 525px!important;
+    height: 138px;
     background: var(--whiteBg);
     box-shadow: var(--shadow);
     border-radius: var(--cardBorder);
@@ -65,6 +65,7 @@
     padding: 10px;
     flex-direction: column;
     margin: 0 0 20px;
+    min-width: 360px;
 }
 
 .people-note-loader>div {
@@ -72,8 +73,8 @@
 }
 
 .people-note-img-skeleton>span {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     margin: 5px;
     display: block;
@@ -97,6 +98,7 @@
 
 .people-note-icon-holder {
     position: relative;
+    left: 10px;
 }
 
 .people-note-icon-skeleton>span,
@@ -112,26 +114,26 @@
 }
 
 .people-note-button-skeleton>span {
-    max-width: 100%;
+    position: relative;
+    left: 15px;
     width: 100%;
-    height: 60px;
-    margin-bottom: 10px;
+    height: 50px;
 }
 
 @media (max-width: 991px) {
     .people-note-loader {
-        padding: 10px;
-        height: 68px;
+        height: 160px;
         margin-bottom: 10px;
     }
     .people-note-name-skeleton>span {
         height: 10px !important;
-        bottom: 10px;
     }
     .people-note-icon-holder {
         flex-direction: row;
         display: flex;
         column-gap: 5px;
+        position: relative;
+        left: 40px;
     }
     .people-note-img-skeleton>span {
         border-radius: 50%;
@@ -139,8 +141,10 @@
         width: 50px;
     }
     .people-note-button-skeleton>span {
-        height: 10px;
-        display: none;
+        height: 80px;
+        position: relative;
+        left: 30px;
+        top: 5px;
     }
     .people-note-loader {
         width: 100%;

@@ -15,7 +15,7 @@ const PeopleNote= () => {
 				<Col sm={4}>
 					<Skeleton containerClassName="people-note-name-skeleton " />
 					<Skeleton containerClassName="people-note-name-skeleton" />
-			<Skeleton containerClassName="people-note-name-skeleton " />
+
 				</Col>
 				<Col sm={6}>
 				<div className="people-note-icon-holder">

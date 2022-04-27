@@ -15,7 +15,7 @@ const ExhibitorNote = () => {
 					
 				
 					</Col>
-en
+
 					<Col sm={6}>
 					<div className="Exhibitor-note-icon-holder">
 						<Skeleton containerClassName="Exhibitor-note-icon-skeleton" />

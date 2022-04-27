@@ -120,7 +120,7 @@
 @media (max-width: 991px) {
     .session-note-loader {
         padding: 10px;
-        height: 68px;
+        height: 150px;
         margin-bottom: 10px;
     }
     .session-note-name-skeleton>span {
@@ -136,7 +136,8 @@
     }
     .session-note-name-skeleton-box>span {
         position: relative;
-        height: 10px;
-        width: 100%;
+        height: 60px;
+        width: 320px;
+        left: 0px;
     }
 }

@@ -24,7 +24,7 @@ const PeopleLoader = () => {
 				</div>
 			</Row>
 			<div className="people-card-action-holder">
-			pc
+		
 				<Skeleton containerClassName="people-card-button-skeleton" />
 				<Skeleton containerClassName="people-card-button-skeleton" />
 				

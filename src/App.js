@@ -26,7 +26,12 @@ function App() {
 					Exhibitor Note
 					<ExhibitorNote />
 				</Col>
+
 				<Col sm={6}>
+				
+				</Col>
+
+				<Col sm={8}>
 					Meeting Card
 					<MeetingCard />
 				</Col>
@@ -46,6 +51,10 @@ function App() {
 					Session note
 					<SessionNote />
 				</Col>
+
+				<Col sm={4} lg={6}>
+					
+				</Col>
 				<Col sm={6}>
 					Session loader
 					<SessionLoader />
@@ -56,13 +65,13 @@ function App() {
 					Session loader
 					<SessionLoader />
 				</Col>
-				<Col sm={6}>
+				<Col sm={8} >
 					people note
 					<PeopleNote />
 				</Col>
 			</Row>
 			<Row>
-				<Col sm={6}>
+				<Col sm={8}>
 					people note
 					<PeopleNote />
 				</Col>

@@ -66,16 +66,20 @@
 
 .heading-container {
     float: left;
-}
-
-.sub-heading-container {
-    float: left;
-    position: absolute;
-    left: 26%;
+    margin-top: 10px;
 }
 
 .meeting-name-skeleton1>span {
     width: 200px;
+    position: relative;
+}
+
+.meeting-sub-skeleton2>span {
+    height: 25px;
+    width: 40px;
+    position: relative;
+    right: 160px;
+    top: 5px;
 }
 
 .meeting-name-skeleton2>span {
@@ -85,23 +89,17 @@
     float: left;
 }
 
-.meeting-name-skeleton3>span {
-    width: 50px;
-    border-radius: 20%;
-}
-
-.meeting-name-skeleton4>span {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    right: 130px;
-    margin: 10px;
-}
-
 .meeting-button-skeleton>span {
     width: 80px;
     border-radius: 10px;
     height: 30px;
+}
+
+.meeting-sub-skeleton1>span {
+    height: 20px;
+    width: 90px;
+    border-radius: 30px;
+    margin-top: 15px;
 }
 
 .button-container {
@@ -112,15 +110,28 @@
 }
 
 @media (max-width: 991px) {
-    .meeting-name-skeleton4>span {
-        position: absolute;
-        height: 20px;
-        top: 30px;
-        right: 70px;
+    .meeting-card-loader {
+        height: 120px;
     }
     .meeting-button-skeleton>span {
-        width: 50px;
+        position: relative;
+        width: 20px;
         border-radius: 10px;
         height: 20px;
+        bottom: 50px;
+    }
+    .meeting-name-skeleton1>span {
+        width: 100px;
+    }
+    .meeting-sub-skeleton1>span {
+        height: 15px;
+        width: 40px;
+    }
+    .meeting-sub-skeleton2>span {
+        height: 25px;
+        width: 30px;
+        position: relative;
+        right: 50px;
+        top: 5px;
     }
 }

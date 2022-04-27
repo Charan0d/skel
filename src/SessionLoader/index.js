@@ -15,7 +15,7 @@ const SessionLoader = () => {
 					<Col sm={6}>
 						<Skeleton containerClassName="session-card-name-skeleton" />
 						<Skeleton containerClassName="session-card-name-skeleton" />
-						sc
+					
 					</Col>
 					<Col sm={4}>
 						<div className="session-card-icon-holder">

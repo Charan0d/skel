@@ -16,7 +16,7 @@ const SessionNote = () => {
 						
                         
 					</Col>
-sn
+
 					<Col sm={2}>
 					<div className="session-note-icon-holder">
 						<Skeleton containerClassName="session-note-icon-skeleton" />

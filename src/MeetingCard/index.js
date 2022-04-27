@@ -10,26 +10,27 @@ const  MeetingCard = () => {
 		mc
 
 		<Row className="meeting-card-loader">
-				<Col sm={4} className="ps-0">
+				<Col sm="auto" className="ps-0">
 					<div className="heading-container">
 				<Skeleton containerClassName="meeting-name-skeleton1"/>
 				<Skeleton containerClassName="meeting-name-skeleton2"/>
+				
 					</div>
 				</Col>
 			
-						<Col sm={4}>
+						<Col sm="auto">
 							<div className="sub-heading-container">
-							<Skeleton containerClassName="meeting-name-skeleton3 " />
 						
-							<Skeleton containerClassName="meeting-name-skeleton4" />
+							<Skeleton containerClassName="meeting-sub-skeleton1"/>
+							<Skeleton containerClassName="meeting-sub-skeleton2"/>				
 							</div>
 						</Col>
-						<Col sm={4}>
+						<Col lg={6}>
 							<div className="button-container">
 							<Skeleton containerClassName="meeting-button-skeleton" />
 						
 							<Skeleton containerClassName="meeting-button-skeleton" />
-						mc
+				
 						</div>
 						</Col>
 
