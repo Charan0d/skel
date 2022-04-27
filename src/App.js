@@ -13,88 +13,60 @@ function App() {
 		<Container className="App">
 			<Row>
 				<Col sm={6}>
+					Exhibitor Card
 					<ExhibiorLoader />
 				</Col>
 				<Col sm={6}>
+					Exhibitor Card
 					<ExhibiorLoader />
 				</Col>
-				
-
-		 <Col sm={6}>
-					<ExhibitorNote/>
-
-				</Col>
-			
-
-	
-			
-					<MeetingCard/>
-					
-
-				
-				
-
-
-			
-
-				
-					<Col sm={6}>	
-					<PeopleLoader/>
-
-				</Col>
-					
-				
-		
-				
-				
-				<Col sm={6}>	
-					<PeopleLoader/>
-
-				</Col>
-					
-			
-
-
-
-			 <Col sm={6}>
-					<SessionNote/>
-
-				</Col>
-			
-
-				<Col sm={6}>
-				
-
-				</Col>
-			
-
-				<Col sm={6}>
-					<SessionLoader/>
-
-				</Col>
-				<Col sm={6}>
-					<SessionLoader/>
-
-				</Col>
- 
-
-
-
-
-	<Col sm={6}>
-				<PeopleNote/>
-
-				</Col>
-				<Col sm={6}>
-				<PeopleNote/>
-
-				</Col> 
-
-				
-
 			</Row>
-
-			
+			<Row>
+				<Col sm={6}>
+					Exhibitor Note
+					<ExhibitorNote />
+				</Col>
+				<Col sm={6}>
+					Meeting Card
+					<MeetingCard />
+				</Col>
+			</Row>
+			<Row>
+				<Col sm={6}>
+					People Loader card
+					<PeopleLoader />
+				</Col>
+				<Col sm={6}>
+					People Loader
+					<PeopleLoader />
+				</Col>
+			</Row>
+			<Row>
+				<Col sm={4} lg={6}>
+					Session note
+					<SessionNote />
+				</Col>
+				<Col sm={6}>
+					Session loader
+					<SessionLoader />
+				</Col>
+			</Row>
+			<Row>
+				<Col sm={6}>
+					Session loader
+					<SessionLoader />
+				</Col>
+				<Col sm={6}>
+					people note
+					<PeopleNote />
+				</Col>
+			</Row>
+			<Row>
+				<Col sm={6}>
+					people note
+					<PeopleNote />
+				</Col>
+			</Row>
 		</Container>
 	);
 }
