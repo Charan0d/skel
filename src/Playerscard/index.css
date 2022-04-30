@@ -55,12 +55,11 @@
     --tooltipBg: transparent linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
 }
 
-.people-note-loader {
+.playercard-loader {
     max-width: 525px!important;
-    height: 138px;
+    height: 100px;
     background: var(--whiteBg);
     box-shadow: var(--shadow);
-    border-radius: var(--cardBorder);
     display: flex;
     padding: 10px;
     flex-direction: column;
@@ -68,85 +67,105 @@
     min-width: 360px;
 }
 
-.people-note-loader>div {
+
+/* .playercard-img-skeleton>span {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+} */
+
+.playercard-loader>div {
     height: 100%;
 }
 
-.people-note-img-skeleton>span {
+.playercard-name-skeleton-box>span {
+    position: relative;
+    bottom: 10px;
     height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin: 5px;
-    display: block;
+    /* top: 30px; */
 }
 
-.people-note-name-holder {
+.playercard-name-holder {
     justify-content: space-between;
 }
 
-.people-note-action-holder {
+.playercard-loader.playercard-icon-holder {
+    display: flex;
+    width: fit-content;
+    padding-right: 10px !important;
+}
+
+.playercard-action-holder {
     display: flex;
     width: 100%;
 }
 
-.people-note-action-holder>span {
+.player-align {
+    position: relative;
+    top: 20px;
+}
+
+.playercard-name-skeleton1>span,
+.playercard-name-skeleton1 {
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+}
+
+.playercard-action-holder>span {
     width: 100%;
-    float: right;
+}
+
+.playercard-icon-skeleton>span,
+.playercard-icon-skeleton {
+    width: 20px;
+    height: 20px;
+}
+
+.playercard-img-skeleton>span,
+.playercard-img-skeleton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     position: relative;
-    right: 100px;
+    bottom: 5px;
+    right: 10px;
 }
 
-.people-note-icon-holder {
-    position: relative;
-    left: 10px;
-}
-
-.people-note-icon-skeleton>span,
-.icon-skeleton {
-    width: 16px;
-    height: 16px;
-}
-
-.people-note-right-area {
+.playercard-right-area {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.people-note-button-skeleton>span {
-    position: relative;
-    left: 15px;
-    width: 100%;
-    height: 50px;
+.playercard-icon-holder {
+    margin-left: 0rem;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 5px;
 }
 
 @media (max-width: 991px) {
-    .people-note-loader {
-        height: 160px;
+    .playercard-loader {
+        padding: 10px;
+        height: 150px;
         margin-bottom: 10px;
     }
-    .people-note-name-skeleton>span {
+    .playercard-name-skeleton>span {
         height: 10px !important;
+        width: 100px;
     }
-    .people-note-icon-holder {
-        flex-direction: row;
+    .playercard-icon-holder {
         display: flex;
         column-gap: 5px;
+        margin-left: 5rem;
+        /* flex-direction: column; */
+        justify-content: space-between;
+    }
+    .playercard-name-skeleton-box>span {
         position: relative;
-        left: 40px;
-    }
-    .people-note-img-skeleton>span {
-        border-radius: 50%;
-        height: 50px;
-        width: 50px;
-    }
-    .people-note-button-skeleton>span {
-        height: 90px;
-        position: relative;
-        left: 30px;
-        top: 5px;
-    }
-    .people-note-loader {
-        width: 100%;
+        height: 60px;
+        width: 320px;
+        left: 0px;
     }
 }

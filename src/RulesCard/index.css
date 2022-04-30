@@ -55,98 +55,45 @@
     --tooltipBg: transparent linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
 }
 
-.people-note-loader {
-    max-width: 525px!important;
-    height: 138px;
-    background: var(--whiteBg);
-    box-shadow: var(--shadow);
-    border-radius: var(--cardBorder);
+.Rules-card-loader {
     display: flex;
-    padding: 10px;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
     margin: 0 0 20px;
-    min-width: 360px;
+    border-radius: var(--cardBorder);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 650px;
+    border: var(--border);
+    position: relative;
+    height: 70px;
 }
 
-.people-note-loader>div {
+
+/* display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+background: var(--zdcardcolor);
+height: 138px;
+margin: 0 0 20px;
+border-radius: var(--cardBorder);
+box-shadow: var(--shadow);
+width: 100%;
+max-width: 514px;
+border: var(--border);
+position: relative;
+} */
+
+.Rules-card-loader>div {
     height: 100%;
 }
 
-.people-note-img-skeleton>span {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin: 5px;
+.Rules-card-loader.pointer.img-skeleton {
+    height: 100%;
+}
+
+.Rules.img-skeleton>span {
     display: block;
-}
-
-.people-note-name-holder {
-    justify-content: space-between;
-}
-
-.people-note-action-holder {
-    display: flex;
-    width: 100%;
-}
-
-.people-note-action-holder>span {
-    width: 100%;
-    float: right;
-    position: relative;
-    right: 100px;
-}
-
-.people-note-icon-holder {
-    position: relative;
-    left: 10px;
-}
-
-.people-note-icon-skeleton>span,
-.icon-skeleton {
-    width: 16px;
-    height: 16px;
-}
-
-.people-note-right-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.people-note-button-skeleton>span {
-    position: relative;
-    left: 15px;
-    width: 100%;
-    height: 50px;
-}
-
-@media (max-width: 991px) {
-    .people-note-loader {
-        height: 160px;
-        margin-bottom: 10px;
-    }
-    .people-note-name-skeleton>span {
-        height: 10px !important;
-    }
-    .people-note-icon-holder {
-        flex-direction: row;
-        display: flex;
-        column-gap: 5px;
-        position: relative;
-        left: 40px;
-    }
-    .people-note-img-skeleton>span {
-        border-radius: 50%;
-        height: 50px;
-        width: 50px;
-    }
-    .people-note-button-skeleton>span {
-        height: 90px;
-        position: relative;
-        left: 30px;
-        top: 5px;
-    }
-    .people-note-loader {
-        width: 100%;
-    }
+    height: 100%;
+    max-width: 236px;
 }

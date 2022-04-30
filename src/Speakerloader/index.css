@@ -55,98 +55,76 @@
     --tooltipBg: transparent linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
 }
 
-.people-note-loader {
-    max-width: 525px!important;
-    height: 138px;
-    background: var(--whiteBg);
-    box-shadow: var(--shadow);
-    border-radius: var(--cardBorder);
+.Speaker-card-loader {
     display: flex;
-    padding: 10px;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
     margin: 0 0 20px;
-    min-width: 360px;
+    border-radius: var(--cardBorder);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 620px;
+    border: var(--border);
+    position: relative;
+    height: 90px;
 }
 
-.people-note-loader>div {
+.Speaker-card-loader>div {
     height: 100%;
 }
 
-.people-note-img-skeleton>span {
-    height: 60px;
-    width: 60px;
+.Speaker-card-img-skeleton>span {
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     margin: 5px;
     display: block;
 }
 
-.people-note-name-holder {
+.Speaker-card-name-holder {
     justify-content: space-between;
-}
-
-.people-note-action-holder {
-    display: flex;
-    width: 100%;
-}
-
-.people-note-action-holder>span {
-    width: 100%;
-    float: right;
     position: relative;
-    right: 100px;
+    top: 11px;
 }
 
-.people-note-icon-holder {
-    position: relative;
-    left: 10px;
+.Speaker-card-loader .Speaker-card-icon-holder {
+    width: fit-content;
+    padding-right: 5px !important;
 }
 
-.people-note-icon-skeleton>span,
-.icon-skeleton {
-    width: 16px;
-    height: 16px;
+.Speaker-card-icon-skeleton>span,
+.icon-skeleton1 {
+    width: 15px;
+    height: 15px;
 }
 
-.people-note-right-area {
+.Speaker-card-right-area {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.people-note-button-skeleton>span {
-    position: relative;
-    left: 15px;
-    width: 100%;
-    height: 50px;
-}
-
 @media (max-width: 991px) {
-    .people-note-loader {
-        height: 160px;
+    .Speaker-card-loader {
+        padding: 10px;
+        height: 90px;
         margin-bottom: 10px;
     }
-    .people-note-name-skeleton>span {
+    .Speaker-card-name-skeleton>span {
         height: 10px !important;
+        bottom: 10px;
     }
-    .people-note-icon-holder {
+    .Speaker-card-icon-holder {
         flex-direction: row;
         display: flex;
         column-gap: 5px;
-        position: relative;
-        left: 40px;
     }
-    .people-note-img-skeleton>span {
+    .Speaker-card-img-skeleton>span {
         border-radius: 50%;
         height: 50px;
         width: 50px;
     }
-    .people-note-button-skeleton>span {
-        height: 90px;
-        position: relative;
-        left: 30px;
-        top: 5px;
-    }
-    .people-note-loader {
+    .Speaker-card-loader {
         width: 100%;
     }
 }

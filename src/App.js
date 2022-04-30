@@ -7,6 +7,13 @@ import ExhibitorNote from "./ExhibitorNote";
 import SessionNote from "./SessionNote";
 import PeopleNote from "./PeopleNote";
 import MeetingCard from "./MeetingCard";
+import SessionMainCard from "./Sessionmaincard";
+import YourCard from "./YourCard";
+import Playercard from "./Playerscard";
+import Rulescard from "./RulesCard";
+import SpeakerLoader from "./Speakerloader";
+import Pointercard from "./PointerCard";
+
 
 function App() {
 	return (
@@ -75,7 +82,57 @@ function App() {
 					people note
 					<PeopleNote />
 				</Col>
+
+				<Col lg={12}>
+				Sessionmaincard
+					<SessionMainCard />
+				</Col>
+
+
+
+
+				<Col lg={12}>
+			yourcard
+					<YourCard />
+				</Col>
+
+		 <Col sm={8} >
+
+		 playercard
+				<Playercard/>
+			
+					</Col> 
+
+
+
+
+					<Col sm={8} >
+
+pointercard
+	   <Pointercard/>
+   
+		   </Col> 
+
+
+
+
+					 <Col sm={6}>
+				rules/download
+					<Rulescard/>
+				</Col> 
+
+				<Col sm={8}>
+				Speakerloader
+					<SpeakerLoader/>
+				</Col>
+
+
+				
 			</Row>
+
+			
+
+
 		</Container>
 	);
 }
