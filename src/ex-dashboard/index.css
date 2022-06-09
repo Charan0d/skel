@@ -1,0 +1,95 @@
+:root {
+    --font10: 10px;
+    --font12: 12px;
+    --font13: 13px;
+    --font14: 14px;
+    --font15: 15px;
+    --font16: 16px;
+    --font18: 18px;
+    --buttonfont: 20px;
+    --font21: 21px;
+    --font22: 22px;
+    --font24: 24px;
+    --font32: 32px;
+    --font34: 34px;
+    --zddBg: transparent linear-gradient(180deg, #fff, #f5f5f6) 0% 0% no-repeat padding-box;
+    --zdoverlayBg: #ebebef 0% 0% no-repeat padding-box;
+    --zdfontcolor: #000;
+    --fontFamilyRegular: "OpenSansRegular";
+    --fontFamilyBold: "OpenSansBold";
+    --Amazoncolor: #e3e3e3;
+    --lightGrey: #e6e6e6 0% 0% no-repeat padding-box;
+    --fontcolorLight: #000;
+    --zdcardcolor: lightblue;
+    --zdbandcolor: #fff;
+    --zdButton: #fff;
+    --zddBgLight: transparent linear-gradient(121deg, #f5f6fa, #f5f5f5) 0% 0% no-repeat padding-box;
+    --zdCancelButton: transparent linear-gradient(180deg, #fff, #f8f8f8) 0% 0% no-repeat padding-box;
+    --zdNormalButton: transparent linear-gradient(180deg, #8d88ff, #5f59e1) 0% 0% no-repeat padding-box;
+    --zdNormalButtonFontColor: #fff;
+    --zdCancelButtonFontColor: #5f59e1;
+    --modalHeading: 14px;
+    --modalheadingcolor: #000;
+    --regHeading: 13px;
+    --buttonfont: 14px;
+    --info2: 10px;
+    --info: 12px;
+    --info1: 12.5px;
+    --mobileiconfont: 8px;
+    --iconfont: 12.5px;
+    --gradientBackground: transparent linear-gradient(90deg, #8d88ff, #5f59e1) 0% 0% no-repeat padding-box;
+    --gradientBackground1: #fff linear-gradient(180deg, #8d88ff, #5f59e1) 0% 0% no-repeat padding-box;
+    --iconfontcolor: #fff;
+    --shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
+    --buttonShadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    --buttonShadow1: 0px 1px 3px rgba(0, 0, 0, 0.16);
+    --tooltipcolor: 29px solid #fff;
+    --border: 0px;
+    --buttonborder: 1px solid #fff;
+    --whiteBg: #fff 0% 0% no-repeat padding-box;
+    --modalHeadingBorder: 3px solid #5f59e1;
+    --cardBorder: 8px !important;
+    --modalBorder: 18px 0px 18px 18px !important;
+    --modalFilter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.349));
+    --modalShadow: 0px 4px 84px rgba(0, 0, 0, 0.308);
+    --tooltipBg: transparent linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+}
+
+.ex-card-loader {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0 0 30px;
+    border-radius: var(--cardBorder);
+    box-shadow: var(--shadow);
+    width: 80%;
+    border: var(--border);
+    position: relative;
+    height: 90px;
+    align-content: space-between;
+}
+
+.ex-card-loader>div {
+    height: 100%;
+}
+
+.ex-card-img-skeleton>span {
+    height: 70px;
+    width: 90px;
+    margin: 10px;
+}
+
+.ex-card-name-skeleton>span {
+    margin-top: 30px;
+}
+
+.ex-card-cat-skeleton>span {
+    width: 20px;
+    margin-top: 30px;
+}
+
+.ex-card-icon-skeleton>span {
+    margin-top: 20px;
+    height: 40px;
+    margin-left: 3rem;
+}

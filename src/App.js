@@ -1,25 +1,38 @@
-import ExhibiorLoader from "./ExhibitorLoader";
+// import ExhibiorLoader from "./ExhibitorLoader";
 import "./App.css";
 import { Col, Container, Row } from "react-bootstrap";
-import PeopleLoader from "./PeopleLoader";
-import SessionLoader from "./SessionLoader";
-import ExhibitorNote from "./ExhibitorNote";
-import SessionNote from "./SessionNote";
-import PeopleNote from "./PeopleNote";
-import MeetingCard from "./MeetingCard";
-import SessionMainCard from "./Sessionmaincard";
-import YourCard from "./YourCard";
-import Playercard from "./Playerscard";
-import Rulescard from "./RulesCard";
-import SpeakerLoader from "./Speakerloader";
-import Pointercard from "./PointerCard";
+// import PeopleLoader from "./PeopleLoader";
+// import SessionLoader from "./SessionLoader";
+// import ExhibitorNote from "./ExhibitorNote";
+// import SessionNote from "./SessionNote";
+// import PeopleNote from "./PeopleNote";
+// import MeetingCard from "./MeetingCard";
+// import SessionMainCard from "./Sessionmaincard";
+// import YourCard from "./YourCard";
+// import Playercard from "./Playerscard";
+// import Rulescard from "./RulesCard";
+// import SpeakerLoader from "./Speakerloader";
+// import Pointercard from "./PointerCard";
+
+
+
+
+
+
+import ExhibitorDashboard from './ex-dashboard';
+import AddTeam from './AddTeam';
+import ExhibitorTeam from './ExibitorTeam';
+import PeopleDashboard from './PeopleDash';
+import SessionDashboard from './SessionDash';
 
 
 function App() {
 	return (
-		<Container className="App">
-			<Row>
-				<Col sm={6}>
+		<div className="App">
+
+		
+			 {/* <Row> 
+				 <Col sm={6}>
 					Exhibitor Card
 					<ExhibiorLoader />
 				</Col>
@@ -124,16 +137,35 @@ pointercard
 				<Col sm={8}>
 				Speakerloader
 					<SpeakerLoader/>
-				</Col>
+				</Col> 
+
+</Row> */}
 
 
+
+	<Col lg={12}>
+				ex-databaodrd
+<ExhibitorDashboard/>
+addteam
+<AddTeam/>
+ex-team
+<ExhibitorTeam/>
+peopledash
+<PeopleDashboard/>
+sessiondash
+<SessionDashboard/>
+
+
+
+	</Col>			
+	
+
+
+</div>
 				
-			</Row>
 
 			
 
-
-		</Container>
 	);
 }
 
